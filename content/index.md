@@ -1,6 +1,17 @@
 ---
-title: Welcome to Quartz
+title: Lafixier::Notes
 ---
+## Lafixier::Notesとは
+[[Lafixier]]が書いたメモを公開する場。
+このサイトのリポジトリは[こちら](https://github.com/lafixier/notes)。
+## 技術スタック的なもの
+- Quartz
+- Cloudflare
+## Tags
+#日報
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+#AviUtl 
+
+#CTF 
+
+#Nim

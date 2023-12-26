@@ -1,20 +1,23 @@
-# Quartz v4
+# Lafixier::Notes
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+## 概要
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+<https://notes.lfxr.dev>
 
-**If you are looking for Quartz v3, you can find it on the [`hugo` branch](https://github.com/jackyzha0/quartz/tree/hugo).**
+## 技術スタック
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+- [Quartz v4](https://github.com/jackyzha0/quartz)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## 依存関係のライセンス
 
-## Sponsors
+[Third Party Notices](ThirdPartyNotices.md)を参照・
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Thanks for Quartz.
+
+## ライセンス
+
+**特に明記されていない限り**:
+
+- `content/`以下のファイルは[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja)でライセンスされています。
+- それ以外のファイルは[MIT License](LICENSE.txt)でライセンスされています。
