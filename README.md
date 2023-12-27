@@ -11,7 +11,7 @@
 
 ## 依存関係のライセンス
 
-[Third Party Notices](ThirdPartyNotices.md)を参照・
+[Third Party Notices](ThirdPartyNotices.md)を参照。
 
 Thanks for Quartz.
 
@@ -19,5 +19,6 @@ Thanks for Quartz.
 
 **特に明記されていない限り**:
 
+- `quartz/static/`以下のファイル: (c) 2023 Lafixier
 - `content/`以下のファイルは[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja)でライセンスされています。
-- それ以外のファイルは[MIT License](LICENSE.txt)でライセンスされています。
+- それら以外のファイルは[MIT License](LICENSE.txt)でライセンスされています。

@@ -6,9 +6,7 @@ const config: QuartzConfig = {
     pageTitle: "Lafixier::Notes",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     baseUrl: "notes.lfxr.dev",
     ignorePatterns: ["private", "templates", ".obsidian", ".trash"],
     defaultDateType: "created",
