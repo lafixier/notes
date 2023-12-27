@@ -5,6 +5,7 @@ tags:
   - プログラミング言語
   - 言語
   - Nim
+date: 2023-12-26
 ---
 ## 概要
 > Efficient, expressive, elegant

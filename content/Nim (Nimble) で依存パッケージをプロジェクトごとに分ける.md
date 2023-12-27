@@ -3,6 +3,7 @@ title: Nim (Nimble) で依存パッケージをプロジェクトごとに分け
 tags:
   - Nim
   - Nimble
+date: 2023-12-26
 ---
 ## TL;DR
 ### 下準備
