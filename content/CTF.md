@@ -25,3 +25,8 @@ date: 2023-12-27
 - 書籍を読む
     - [『詳解セキュリティコンテスト』](https://ctfbook.github.io/2nd/)
     - [黒林檎のお部屋 ~ハッキング編~](http://ruffnex.net/kuroringo/pdf/Hack.pdf)
+- 小説 (!?)
+    - [ハッカーとチョコレート（鶴見トイ） - カクヨム](https://kakuyomu.jp/works/1177354054885669846)
+        - 女子高校生がCTFをするという小説
+    - [脆弱性を攻撃される童話事例集（鶴見トイ） - カクヨム](https://kakuyomu.jp/works/1177354054882453808)
+    - [異世界よ、そんなセキュリティで大丈夫か?（まっぴ～） - カクヨム](https://kakuyomu.jp/works/1177354054885538965)

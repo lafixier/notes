@@ -14,10 +14,12 @@ export default (() => {
 
     const iconPath = joinSegments(baseDir, "static/icon.png")
     const ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`
+    const a = fileData.frontmatter?.tags
+    const websiteName = "Lafixier::Notes"
 
     return (
       <head>
-        <title>{title}</title>
+        <title>{title === websiteName ? title : `${title} | ${websiteName}`}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={title} />
