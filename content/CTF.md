@@ -22,6 +22,7 @@ date: 2023-12-27
 - 誰かが書いた #Writeup を読む
 - ウェブサイトを見る
     - [Web Security Academy: Free Online Training from PortSwigger](https://portswigger.net/web-security)
+    - [Satoooon1024 CTF Wiki](https://scrapbox.io/satoooon-ctf-wiki/)
 - 書籍を読む
     - [『詳解セキュリティコンテスト』](https://ctfbook.github.io/2nd/)
     - [黒林檎のお部屋 ~ハッキング編~](http://ruffnex.net/kuroringo/pdf/Hack.pdf)
