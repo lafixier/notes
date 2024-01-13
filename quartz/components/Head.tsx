@@ -13,7 +13,7 @@ export default (() => {
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
 
     const iconPath = joinSegments(baseDir, "static/icon.png")
-    const ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`
+    const ogImagePath = `https://${cfg.baseUrl}/static/icon.png`
     const a = fileData.frontmatter?.tags
     const websiteName = "Lafixier::Notes"
 
@@ -24,7 +24,7 @@ export default (() => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        {cfg.baseUrl && <meta property="og:image" content={iconPath} />}
+        {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />}
         <meta name="twitter:card" content="summary"></meta>
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
