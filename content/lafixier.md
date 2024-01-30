@@ -9,7 +9,7 @@ date: 2023-12-26
 - [[links]]を参照
 ##  興味がある分野
 - [[aviutl]]
-- [[ctf_]]
+- [[ctf]]
 - [[natural-number-name]]
 ## 好きな言語
-- [[nim_]]
+- [[nim]]
