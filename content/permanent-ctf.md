@@ -25,6 +25,9 @@ date: 2023-12-27
 ## prompt(1) to win - 0x0
 - URL: https://prompt.ml/
 - [[XSS]]により`prompt(1)`を呼び出すゲーム
+## CryptoHack
+- URL: https://cryptohack.org/
+- Cryptoに特化
 ## CELTF
 - URL: https://celtf.com/
 > ゲーム性を重視した CTF練習サイト

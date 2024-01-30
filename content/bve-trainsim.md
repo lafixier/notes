@@ -5,6 +5,7 @@ tags:
   - シミュレータ
   - BVE
 date: 2023-12-27
+title: BVE Trainsim
 ---
 公式サイト: [BVE Trainsim - 鉄道運転シミュレーター (Windows 用無料ゲームソフト)](https://bvets.net/)
 ## 路線一覧

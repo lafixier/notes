@@ -6,10 +6,10 @@ tags:
 date: 2023-12-26
 ---
 ## リンク
-- [[リンク]]を参照
+- [[links]]を参照
 ##  興味がある分野
-- [[AviUtl]]
-- [[CTF]]
-- [[Natural Number Game]]
+- [[aviutl]]
+- [[ctf]]
+- [[natural-number-name]]
 ## 好きな言語
-- [[Nim]]
+- [[nim]]

@@ -5,8 +5,9 @@ tags:
   - プログラミング
   - プログラミング言語
 date: 2023-12-27
+title: Lean
 ---
-- 注: [[Natural Number Game]]で学んだ内容を元に書いてます
+- 注: [[natural-number-name]]で学んだ内容を元に書いてます
 ## Tactics
 ### rfl
 - $A=A$を証明する

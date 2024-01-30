@@ -4,6 +4,7 @@ tags:
   - CpawCTF
   - Writeup
 date: 2023-12-27
+title: CpawCTF Writeup
 ---
 ## Q1.[Misc] Test Problem
 問題文に書いてある。

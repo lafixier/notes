@@ -2,6 +2,7 @@
 tags:
   - Lafixier
 date: 2023-12-27
+title: リンク
 ---
 ### Social Media
 | Service       | Account                                                          |
