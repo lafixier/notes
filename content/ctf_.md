@@ -15,7 +15,7 @@ date: 2023-12-27
 - [不正アクセス行為の禁止等に関する法律 | e-Gov法令検索](https://elaws.e-gov.go.jp/document?lawid=411AC0000000128_20220617_504AC0000000068)に目を通しておくべき
 ## 参加
 ### 常設
-- [[permanent-ctf]]を参照
+- [[permanent-ctfs]]を参照
 ### 非常設
 - [CTFtime](https://ctftime.org/)で大会を探す
 ## 学習
