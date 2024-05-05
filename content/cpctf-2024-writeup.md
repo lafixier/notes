@@ -100,6 +100,7 @@ Googleでそれを検索すると画面右側の[ナレッジパネル](https://
 
 [IrfanView](https://www.irfanview.com)で画像を開き, メニューの`Image` -> `Information…` -> `EXIF info` -> `Show in Google Maps`を押下し, 画像に記録されている緯度経度をGoogleマップ上で表示する。
 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d810.4460408786392!2d139.69965691045763!3d35.65768901360849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDM5JzI3LjgiTiAxMznCsDQyJzAwLjkiRQ!5e0!3m2!1sen!2sjp!4v1713953461409!5m2!1sen!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 ピンの先が`渋谷フクラスビル`を示しているので, Googleで`渋谷フクラスビル 洋食屋`と検索すると, 検索結果の最上部に地図とともに`純洋食とスイーツ パーラー大箸`が現れる。
 その店名をGoogleで検索するとインスタの公式アカウント名が`@parlour_ohashi`であることが分かるので, 試しに`CPCTF{ParlourOhashi}`と解答すると無事正解 (だったはず。店名・flagが間違っていたらすみません)。
 <details><summary>flag</summary>
