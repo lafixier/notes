@@ -62,6 +62,7 @@ CPCTF{b3_4_cLa1rv0yANt}
 
 `CPCTF{b3_4_cLa1rv0yANt}`
 </details>
+
 ## Crypto
 ###  [Substitution](https://cpctf.space/challenges/325f324c-86e4-4388-b1c4-8699c7fd58d5) (Newbie, 90 solved, ❌️)
 > Cpvv muzp! Xuvdazs ijax ekrtiusknl kpqgakpx fuij xwavv nzm tniapzep. Rug'dp mpluzxiknipm pyeptiauznv neglpz nzm tpkxpdpknzep. Fkndu buk eknewazs ijp eump nzm gzvuewazs aix xpekpix! ETEIB{jpvvu_ekrtiu_cukvm}
@@ -71,6 +72,7 @@ CPCTF{b3_4_cLa1rv0yANt}
 
 `CPCTF{hello_crypto_world}`
 </details>
+
 ## Forensics
 ### [white has much information](https://cpctf.space/challenges/840e1308-77f0-4622-a024-0d6813809293) (Easy, 60 solved, ✔)
 > これがflagにつながるらしいです  
@@ -104,6 +106,7 @@ Googleでそれを検索すると画面右側の[ナレッジパネル](https://
 
 `CPCTF{ParlourOhashi}`
 </details>
+
 ### [Doctor yellow](https://cpctf.space/challenges/fd39237b-f240-4087-a4bd-8622d2f65fff) (Easy, 69 solved, ❌️)
 >2024年の東工大の前期合格発表の翌日、河川敷を歩いていたら黄色い新幹線が走っているのを見かけました。
 >これはどこで撮られた写真でしょう?
@@ -120,6 +123,7 @@ Googleマップで品川駅から東海道新幹線沿線沿いを探索する�
 
 flag: `CPCTF{3558_13967}`
 </details>
+
 #### 感想
 ### [Dokoda?](https://cpctf.space/challenges/45049446-b24f-4518-8ba8-a9514ec1ecc7) (Easy, 40 solved, ✔)
 >どこで撮ったスクリーンショットだったか忘れてしまいました。  
@@ -163,6 +167,7 @@ Googleレンズに画像を投げると, `浜松駅`がヒットする。浜松�
 
 `CPCTF{kanaya}`
 </details>
+
 ### [Forbidden Code 1](https://cpctf.space/challenges/44def5ae-b8f1-415b-8d37-dfff04b4ed2e) (Medium, 28 solved, 🔺)
 注: **メールアドレスのローカルパートは省略**
 >私の友達が、怪しい発信をしているという噂を聞いた。その真相が知りたいため、手伝ってほしい。  
@@ -202,6 +207,7 @@ Xで`@myaomyaohit`のユーザページを開くと以下の物が見つかる:
 
 `CPCTF{Did_Y0u_3nj0y_tH3_5N5_5urV3y?_1df1aa3r}`
 </details>
+
 ### [Great view](https://cpctf.space/challenges/acfb7245-eabd-4985-8d7a-5c2f54a12624) (Medium, 50 solved, ❌️)
 >とても見晴らしが良い場所に来ました！  
 >ところで、この場所はあるゲームアプリの中でも登場したようです。  
@@ -226,6 +232,7 @@ Writeupを書くにあたってヒントを全部開けた。ヒント曰く`fro
 
 `CPCTF{2023_05_20_23_30}`
 </details>
+
 #### 感想
 - `05-20`で駄目だったのなら次の日である`05-21`も試せば良かった。流石にUTC・JSTのことは頭に微塵も無かった。
 ### [Patlite](https://cpctf.space/challenges/7fceae11-7fcf-4b27-8269-65d45829c368) (Medium, 38 solved, ✔)
@@ -244,6 +251,7 @@ Writeupを書くにあたってヒントを全部開けた。ヒント曰く`fro
 
 `CPCTF{35-556_139-759}`
 </details>
+
 ### [Passing](https://cpctf.space/challenges/040cf841-7bb1-4e7f-87b0-98bf134d9292) (Hard, 12 solved, 🔺)
 > YouTubeに投稿された動画の撮影場所と撮影日時を特定してください。  
 > [https://youtu.be/A1cnWeUiitk](https://youtu.be/A1cnWeUiitk)
@@ -304,6 +312,7 @@ else:
 
 `CPCTF{n07_h41f}`
 </details>
+
 ### [Compound Word](https://cpctf.space/challenges/4803e91a-15c9-4e29-bed3-398b02f96cc4) (Newbie, 72 solved, ✔)
 <https://yukicoder.me/problems/10834>
 > $N$個の文字列 $S_1​, S_2​, ⋯, S_N$​ が与えられる。  
@@ -334,6 +343,7 @@ print(len(T))
 
 `CPCTF{Set_is_Useful_ki70v9354v7onymw}`
 </details>
+
 ## Pwn
 ### [Attack! Attack! Win!](https://cpctf.space/challenges/cf8bf675-d669-4729-ac6e-885f3f66b368) (Newbie, 80 solved, ❌️)
 > flagを盗まれてしまいました……  
@@ -346,6 +356,7 @@ print(len(T))
 
 `CPCTF{4_c1eVeR_4nd_p4CifI5t_7hi3F}`
 </details>
+
 ### [CPCT......](https://cpctf.space/challenges/27539983-608e-4320-9fe4-50954352832d) (Easy, 61 solved, ❌️)
 > 等価交換って良いですよね。ということで、入力した文字数の分だけflagをあげます！  
 > でも貰いすぎても困るので4文字以内でお願いします……  
@@ -369,6 +380,7 @@ print(len(T))
 
 `CPCTF{1m_50rrY_bu7_i_Hav3_0nLy_45_ch4raCteRs}`
 </details>
+
 ## Shell
 ### [netcat](https://cpctf.space/challenges/261fb92f-a2af-4ae5-b0c4-b6d12d145325) (Newbie, 101 solved, ✔)
 > 次のアドレスに接続するとフラグが貰えます！
@@ -391,6 +403,7 @@ CPCTF{p1pe_15_u5efu1}FjmZDU+#_w0Dp@tnD]>MvLEDo\.P;nq0::qM1&V7*~X
 
 `CPCTF{p1pe_15_u5efu1}`
 </details>
+
 ## Web
 ### [Typing game](https://cpctf.space/challenges/bc44eeeb-74dc-41b5-83a2-3960f27aa90e) (Newbie, 124 solved, ✔)
 > 面白そうなタイピングゲームを見つけたぞ！早速やってみよう♪  
@@ -402,6 +415,7 @@ CPCTF{p1pe_15_u5efu1}FjmZDU+#_w0Dp@tnD]>MvLEDo\.P;nq0::qM1&V7*~X
 
 `CPCTF{y0u_4r3_4_typ1ng_m45t3r}`
 </details>
+
 ### [Read Novels](https://cpctf.space/challenges/ee1fab2a-1f89-4db8-ad7e-5c98916aaa93) (Easy, 87 solved, ✔)
 > 小説が読めるサイトを見つけたぞ！  
 > これ小説以外も見れるじゃん...  
@@ -444,6 +458,7 @@ def novel():
 
 `CPCTF{P4th_tr4v3rs41_15_v3ry_d4ng3r0u5}`
 </details>
+
 ### [Let's buy some array](https://cpctf.space/challenges/c4307b31-81f0-40b2-9be3-2b73dca9a95a) (Easy, 67 solved, ✔)
 > 贔屓にしている数列屋さんがモバイルオーダーに対応したらしい。とは言っても金額計算機能しかないらしいけど。  
 > ...この金額計算、あんまり安全じゃなくないか？  
@@ -542,6 +557,7 @@ $ curl -X POST -d 'quantity1=getenv("FLAG");//&quantity2=1&quantity3=1' https://
 
 `CPCTF{3x3c_Func710n_1s_d4ng3r0u5}`
 </details>
+
 ## 振り返り
 - OSINTが面白かった
 	- Geoguessr要素に加えて, 得られる情報から条件を仮定して調査する部分が主に
