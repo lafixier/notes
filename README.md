@@ -17,7 +17,7 @@ Thanks for Quartz.
 
 ## ライセンス
 
-**特に明記されていない限り**:
+**特に明記されていない限り**, 下記**以外**のファイルは[MIT License](LICENSE.txt)でライセンスされています。:
 
-- `quartz/static/`以下のファイルと`content/`以下のファイル: (c) 2023 Lafixier
-- 上記以外のファイルは[MIT License](LICENSE.txt)でライセンスされています。
+- `quartz/static/`以下のファイル
+- `content/`以下のファイル
