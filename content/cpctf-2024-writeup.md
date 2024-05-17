@@ -12,15 +12,10 @@ tags:
   - Web
 date: 2024-05-05
 ---
-## 目次
-- [[#はじめに|はじめに]]
-- [[#CPCTF 2024について|CPCTF 2024について]]
-- [[#戦績|戦績]]
-- [[#凡例|凡例]]
-- [[#Binary|Binary]]
-- [[#Misc|Misc]]
-- [[#OSINT|OSINT]]
-- [[#PPC|PPC]]
+## 更新履歴
+- 2024-05-17
+	- 可読性向上のため改行を挿入
+	- 一部コードブロックのシンタックスハイライトが効かない問題を修正
 ## はじめに
 - ~~初めて書いたWriteupかもしれない~~(←2つ目のWriteupだった)。せっかくなので少し丁寧めに書く。
 - 主にOSINT問を解いた。
@@ -55,7 +50,7 @@ date: 2024-05-05
 ```
 $ strings files/chall
 ... (略)
-CPCTF{b3_4_cLa1rv0yANt}
+CPCTF{∎∎∎∎∎∎∎∎∎∎∎∎∎}
 ... (略)
 ```
 <details><summary>flag</summary>
@@ -79,6 +74,7 @@ CPCTF{b3_4_cLa1rv0yANt}
 > [https://files.cpctf.space/white_has_much_information.txt](https://files.cpctf.space/white_has_much_information.txt)
 
 問題ファイルをメモ帳などで開きマウスで選択すると空白が見える。空白といえば[Whitespace](https://ja.wikipedia.org/wiki/Whitespace)というプログラミング言語が連想されるのでその方向で進める。
+
 ブラウザ上で動作するインタプリタ ([Whitespace Interpreter](https://naokikp.github.io/wsi/whitespace.html)) があるのでそこで実行するとflagが得られる。
 ## Misc
 1問も解けなかった。[turning over](https://cpctf.space/challenges/db456c50-1d89-4550-b287-c66a8b1a708f)は問題ファイルをBlenderで開くとBlenderごと落ちてしまい (原因不明), flagを得られなかった。
@@ -91,6 +87,7 @@ CPCTF{b3_4_cLa1rv0yANt}
 ![[mokomoko.jpeg]]
 
 Googleレンズに画像を突っ込むと, `日立シーサイドパーク`であることが分かる。
+
 Googleでそれを検索すると画面右側の[ナレッジパネル](https://support.google.com/knowledgepanel/answer/9163198?hl=ja)に電話番号が出てくるので, ハイフンを入れずに`CPCTF{}`で囲んで解答する。
 ### [omu-napo](https://cpctf.space/challenges/80ec33a4-bf4c-440f-b0bb-08f66bb46bc2) (Newbie, 36 solved, ✔)
 >熱々の鉄板の上のオムナポ、美味しかった〜。  
@@ -102,6 +99,7 @@ Googleでそれを検索すると画面右側の[ナレッジパネル](https://
 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d810.4460408786392!2d139.69965691045763!3d35.65768901360849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDM5JzI3LjgiTiAxMznCsDQyJzAwLjkiRQ!5e0!3m2!1sen!2sjp!4v1713953461409!5m2!1sen!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ピンの先が`渋谷フクラスビル`を示しているので, Googleで`渋谷フクラスビル 洋食屋`と検索すると, 検索結果の最上部に地図とともに`純洋食とスイーツ パーラー大箸`が現れる。
+
 その店名をGoogleで検索するとインスタの公式アカウント名が`@parlour_ohashi`であることが分かる。
 <details><summary>flag</summary>
 
@@ -117,8 +115,10 @@ Googleでそれを検索すると画面右側の[ナレッジパネル](https://
 
 [合格発表 | 東京工業大学　高校生・受験生向けサイト](https://admissions.titech.ac.jp/admissions/admission/admission/result)より, 写真が撮影された日は2024年3月9日であることがわかる。
 撮影地を特定するためGoogleレンズで検索すると, 検索結果に多摩川が現れる。
+
 それだけでは情報を絞れなかったので, `ドクターイエロー 目撃情報`と検索しヒットした掲示板を探すも, 東京付近かつ撮影日の目撃情報が見つからない。
 ヒント2を見ると, どうやら品川駅付近らしい。
+
 Googleマップで品川駅から東海道新幹線沿線沿いを探索すると, 画像後方のビル群等を組み合わせて[ここ](https://www.google.com/maps/place/35%C2%B034'56.9%22N+139%C2%B040'19.4%22E)周辺であることがわかる。
 <details><summary>flag</summary>
 
@@ -132,7 +132,9 @@ flag: `CPCTF{3558_13967}`
 >例: 答えが稚内駅の場合flagはCPCTF{wakkanai}となります。
 
 画像と睨んでいても場所の情報が得られなさそうなので, 画像中の各SSID (例: `+USEN_Free_WiFi`) の下にあるMACアドレス (例: `98:2d...(略)`) を[WiGLE](https://wigle.net/)で検索する。
+
 画面上の`View` -> `Basic Search`を開く。右側の地図で日本全体を表示して右側の`BSSID/MAC`という項目にMACアドレスを入力して`Query`ボタンを押下し検索。
+
 地図上のピンを拡大すると, 最寄り駅が`鷺ノ宮 (Saginomiya)`であることが分かる。
 <details><summary>flag</summary>
 
@@ -160,9 +162,13 @@ flag: `CPCTF{saginomiya}`
 - 発車標のアナログ時計から, 撮影時刻が10時23分
 - 発車標から, `普通 (当駅始発) 10:25発 熱海行き 3両`
 - 発車標の奥に`新幹線のりかえ`から, 新幹線の駅がある
+
 Googleレンズに画像を投げると, `浜松駅`がヒットする。浜松駅は東海道新幹線の停車駅であるので東海道本線浜松駅で撮影されたと仮定する。
+
 [東海道線上り(浜松→熱海)運用表](https://tokaido-unyo-shizuoka.com/unyo/202403/tokaido-202403-up.html)の中から10:25浜松発の熱海行き列車を探すと列車番号`450M`が見つかり, 熱海着が`13:04`である事がわかる。
+
 熱海から折り返すと仮定して, [東海道線下り(熱海→浜松)運用表](https://tokaido-unyo-shizuoka.com/unyo/202403/tokaido-202403-down.html)の中から13:04以降発の列車を探すと, 列車番号`455M`熱海13:14発豊橋行きが見つかる。
+
 [Yahoo!路線情報](https://transit.yahoo.co.jp/)の乗換案内で`熱海から豊橋, 13:14出発 新幹線無し`を指定して検索すると[検索結果](https://yahoo.jp/6_irZF)より, 15:00以降に初めて停車する駅は15:02着の`金谷 (かなや)`であることが分かる。
 <details><summary>flag</summary>
 
@@ -199,10 +205,12 @@ DESCRIPTION:my favorite CTF event!!!!!!\n I got a leak of part of the flag:
 ... (略)
 ```
 2つ存在する`DESCRIPTION`の内, 前者の方にXのアカウント名らしきもの (`myaomyaohit`) が書かれている。後者の方には, flagの一部 (`CPCTF{Did_Y0u_3`) が書かれている。
+
 Xで`@myaomyaohit`のユーザページを開くと以下の物が見つかる:
 - bioにフラグの一部 (`nj0y_tH3_5N5_5u`)
 - pastebinのURL (https://pastebin.com/C9eUeuQe) を含むツイート
 - `It's not safe to post it here. I'll post it somewhere else.`というツイート
+
 `I'll post it somewhere else`とあるので, Googleで`myaomyaohit`を検索してみると[Redditのユーザページ](https://www.reddit.com/user/myaomyaohit/)がヒット。ページ右側にあるbioにflagの一部 (`rV3y?_1df1aa3r}`) が書かれている…**ことに気が付かず**, ページ中央に書かれているRSA暗号に目が行ってしまい解けなかった。どうやらRSA暗号は, 当問題の続きの問題である[Forbidden code 2](https://cpctf.space/challenges/f6b35e5b-fd42-4927-a6aa-3912824da2e1)に関係するものらしい。
 <details><summary>flag</summary>
 
@@ -220,14 +228,21 @@ Xで`@myaomyaohit`のユーザページを開くと以下の物が見つかる:
 
 Googleレンズに突っ込むと`卯辰山公園見晴らし台`で撮影された写真であるとわかる。
 `卯辰山公園見晴らし台 ゲーム`と調べると`Link！Like！ラブライブ！`というゲームで登場することがわかる。
+
 `Link！Like！ラブライブ！`と調べると, 2023/05/20に正式リリースであるという記載は複数見つかるが, 肝心の時刻が見つからない。
+
 ここで, 公式Twitterアカウント ([@hasunosora_SIC](https://twitter.com/hasunosora_SIC)) を調べてみる。
+
 2023/05/20までのツイートを見たいので, Twitterで`from:hasunosora_SIC until:2023-05-20`と検索する。
+
 そうして現れる[この投稿](https://twitter.com/hasunosora_SIC/status/1659584614762164225)より18時頃予定であることがわかるが, 18時何分なのかがわからない。18:00だと仮定して答えたがハズレ。お手上げだ。
 
 Writeupを書くにあたってヒントを全部開けた。ヒント曰く`from:hasunosora_SIC until:2023-05-21`と調べると良いらしい。**え？**
+
 試しに調べると, [この投稿](https://twitter.com/hasunosora_SIC/status/1659906627452145667)と[この投稿](https://twitter.com/hasunosora_SIC/status/1659929689182605312)より, 23:30ということがわかった。
+
 一体なぜ until:2023-05-**20** でこれらの投稿が引っかからなかったのだろうか。
+
 どうやら, untilで指定する時間は**UTC** (協定世界時)として扱われ, JST (日本時間) として扱わせるには`2023-05-20_23:59:59_JST`などという風にする必要があるらしい。
 <details><summary>flag</summary>
 
@@ -245,8 +260,11 @@ Writeupを書くにあたってヒントを全部開けた。ヒント曰く`fro
 - `?06 渋谷駅`の方向幕を表示するバス
   - `?06`は系統名, `渋谷駅`は行先であると仮定
 - 車ゆりかもめと都営バス
+
 `東京都 バス 渋谷駅行き 06`をGoogle検索すると, 都営バスの`都06`系統であることが分かる。
+
 [都バス 都０６ 系統運行状況 ｜ 都バス運行情報サービス ｜ 東京都交通局](https://tobus.jp/blsys/navi?LCD=&VCD=cslrsi&ECD=NEXT&RTMCD=31)より, 都06系統は`新橋駅前`から`渋谷駅前`までを結ぶことが分かる&ゆりかもめが新橋駅を通っていることから, 新橋駅前周辺をGoogleストリートビューで閲覧。画像左半分のシャッターと画像右側にある緑の看板を目印にして撮影場所を探すと, 緯度経度`35.6657, 139.7589`あたりが適切そうである。
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d810.3635967764121!2d139.7589839067459!3d35.66581210469615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDM5JzU2LjciTiAxMznCsDQ1JzMyLjQiRQ!5e0!3m2!1sen!2sjp!4v1713962412639!5m2!1sen!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <details><summary>flag</summary>
 
@@ -274,8 +292,11 @@ Writeupを書くにあたってヒントを全部開けた。ヒント曰く`fro
 - [18秒](https://youtu.be/A1cnWeUiitk?t=18)あたりに, `天竜峡`と表示された方向幕が映る (後で気がついた)
 #### 撮影場所
 雰囲気から鑑みて, 飯田線・身延線・御殿場線辺りに目星を付ける。
+
 [JR東海の路線図](https://railway.jr-central.co.jp/route-map/)を見る。`中?天?`という名前の駅を探すと, `中部天竜`という駅が飯田線内で見つかる。
+
 YouTubeで[飯田線の前面展望動画](https://www.youtube.com/watch?v=rVv5bUEg88Q)を観る。島式ホーム以外をひたすら飛ばしていくと, 1:26:57あたりの`三河槙原駅`が問題の動画と似ている。
+
 Googleマップで見てみると明らかに問題の動画と景色が一致。
 ### 撮影時刻
 [三河槙原駅(ＪＲ飯田線 中部天竜・天竜峡方面)の時刻表 - Yahoo!路線情報](https://transit.yahoo.co.jp/timetable/25194/1311)の`中部天竜・天竜峡方面`より, 三河槙原を発車する天竜峡行きの列車は平日・土日祝共通で以下の4本があることがわかる:
@@ -283,10 +304,13 @@ Googleマップで見てみると明らかに問題の動画と景色が一致�
 - 09:43
 - 14:54
 - 20:07
+
 さらに, 問題の動画の空の明るさより明らかに`20:07`は除外できるので候補は3本に絞られる。
 #### 撮影日
 問題の動画と同じ投稿者の別の動画 ([車窓](https://www.youtube.com/watch?v=dJI7SWkMp6s)) の概要欄にXへのリンク ([@ichikami412657](https://twitter.com/ichikami412657)) があった。
+
 フォロー中とフォロワーの両方に[@tym10926datera](twitter.com/tym10926datera)というアカウントが居るが, 鍵垢なので情報が得られない。
+
  撮影場所と撮影時刻はおおよそ明らかになったが, 肝心の撮影日がわからない。解けそうになかったが, ヒントを開けたくなかったのでお手上げ。一応2024年3月~4月あたりを答えたがハズレ。
 
 Writeupを書くにあたって, ヒントを全て開けた。どうやらインスタグラム上に例の鍵垢と同じIDのアカウントがあり, そこから撮影日を特定するらしい。
@@ -365,11 +389,15 @@ print(len(T))
 > [配布ファイル](https://files.cpctf.space/cpct.zip)
 
 入力した文字数の文だけflagが貰えるプログラム。
+
 長い文字列を入力しても4文字以内でないとflagが貰えない。
+
 見当がつかなかったのでヒントをすべて開けた。39行目の`length = printf(buf);`が脆弱らしい ([Format String Bug](https://ptr-yudai.hatenablog.com/entry/2018/10/06/234120))。書かれている通り`%99c`と入力してflagを入手。
+
 調べた結果, `%`と`c`の間に数字を入れれば全体幅がその数値になるように調整されて出力されるということがわかった。(参考: [フォーマット指定子一覧](https://www.k-cube.co.jp/wakaba/server/format.html))
+
 `files/chall.c`
-```c:files/chall.c
+```c
 // ...(略)
 	printf("Thank you!\nYour input:");
 	length = printf(buf);
@@ -395,10 +423,11 @@ CPCTF{nc_means_netcat}
 ```
 ### [veeeeeeery long text](https://cpctf.space/challenges/1c53286d-d140-48e8-8a53-e46dcb7bff38) (Easy, 66 solved, -)
 Writeupを書いている時に存在に気がついた問題。競技中完全に見落としていた。
+
 `grep`コマンドを使用して`flag.txt`からflagを探す。
 ```text
 $ cat flag.txt | grep CPCTF
-CPCTF{p1pe_15_u5efu1}FjmZDU+#_w0Dp@tnD]>MvLEDo\.P;nq0::qM1&V7*~X
+CPCTF{∎∎∎∎∎∎∎∎∎∎∎∎∎}FjmZDU+#_w0Dp@tnD]>MvLEDo\.P;nq0::qM1&V7*~X
 ```
 <details><summary>flag</summary>
 
@@ -438,7 +467,7 @@ Read_Novels-main/
     └── novel.html
 ```
 `app.py`
-```python:app.py
+```python
 # ...(略)
 @app.route('/novel', methods=['GET'])
 def novel():
@@ -453,7 +482,9 @@ def novel():
 # ...(略)
 ```
 `./novel/`と GETの`name`パラメータで指定された文字列を繋げたものをパスとして開くという処理をしていることが分かる。
+
 ファイルのパスを投げればそのファイルの中身を返してくれそうなので, [パストラバーサル](https://www.ipa.go.jp/security/vuln/websecurity/parameter.html)で`flag`ファイルを開かせる。
+
 `filepath`を`./novel/../flag`にしたいから, `https://read-novels.web.cpctf.space/novel?name=../flag`にアクセスしてflagを入手。
 <details><summary>flag</summary>
 
@@ -475,7 +506,7 @@ ENV FLAG=CPCTF{dummy_flag}
 EXPOSE 80
 ```
 `array/src/purchase.php`
-```php:array/src/purchase.php
+```php
 // ...(略)
         <form action="purchase.php" method="post">
             <table>
@@ -510,9 +541,13 @@ EXPOSE 80
 わかること:
 - 環境変数`FLAG`にflagが保管されている
 - `quantity1`・`quantity2`・`quantity3` の中身が, 引数としてeval関数に渡されている
+
 よって, 環境変数を取得するコードをquantity1, quantity2, quantity3のいずれかに入れて実行すればflagを取得できそうである。
+
 `PHP 環境変数 取得`などと検索すると, [getenv](https://www.php.net/manual/ja/function.getenv.php)と[$\_ENV](https://www.php.net/manual/ja/reserved.variables.environment.php)がヒットする。
+
 今回は, `quantity1`に, 環境変数を取得する, `getenv`を使用したコードを入れる。
+
 単純に以下のデータを入れて実行しても, エラーが吐かれてしまってflagを得られない:
 
 | 要素        | 中身                 |
@@ -543,7 +578,9 @@ eval('return ' . 'getenv("FLAG")' . '*1000+' . $_POST["quantity2"] . '*2000+' . 
 eval('return getenv("FLAG") *1000+1*2000+1*1500;')
 ```
 となり, 文字列 (`getenv("FLAG")`) と数値 (`1000`) 同士の演算になってしまうからエラーが吐かれたのだと推測できる。
+
 これを回避するために, `getenv("FLAG")`より後の文字列が実行されないようにする。具体的には, `;`で文を終わらせ, `//`で以降の文字列をコメント化する。
+
 よって, quantity1に`getenv("FLAG")`ではなく`getenv("FLAG");//`を入れるように変えて実行すれば良い。
 ```text
 $ curl -X POST -d 'quantity1=getenv("FLAG");//&quantity2=1&quantity3=1' https://lets-buy-some-array.web.cpctf.space/purchase.php
